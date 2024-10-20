@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../global/AppContext'
-import muz1 from '../music/au2 (5).mp3'
 import muz2 from '../music/AUD-20231219-WA0089.mp3'
 import muz3 from '../music/au4.mp3'
 import muz4 from '../music/тактеке.mp3'
@@ -15,6 +14,9 @@ import muz11 from '../music/карамельки.mp3'
 import muz12 from '../music/кр тоолордун мекени.mp3'
 import muz13 from '../music/кыргызстан.mp3'
 import muz15 from '../music/учат в школе.mp3'
+import muz16 from '../music/muz16.mp3'
+import muz17 from '../music/muz17.mp3'
+import muz1 from '../music/mux15.mp3'
 
 const daysOfWeek = [
 	'Sunday',
@@ -64,33 +66,33 @@ function Friday({ disableAudioDays, setDisableAudioDays }) {
 		return savedInputs
 			? JSON.parse(savedInputs)
 			: {
-					input1: '07:45',
-					input2: '08:30',
-					input3: '08:35',
-					input4: '09:20',
-					input5: '09:25',
-					input6: '10:10',
-					input7: '10:20',
-					input8: '11:05',
-					input9: '11:10',
-					input10: '11:55',
-					input11: '12:00',
-					input12: '12:45',
-					input15: '13:00',
-					input16: '13:45',
-					input17: '13:50',
-					input18: '14:35',
-					input19: '14:40',
-					input20: '15:25',
-					input21: '15:35',
-					input22: '16:20',
-					input23: '16:25',
-					input24: '17:10',
-					input25: '17:15',
-					input26: '18:00',
+				input1: '07:45',
+				input2: '08:30',
+				input3: '08:35',
+				input4: '09:20',
+				input5: '09:25',
+				input6: '10:10',
+				input7: '10:20',
+				input8: '11:05',
+				input9: '11:10',
+				input10: '11:55',
+				input11: '12:00',
+				input12: '12:45',
+				input15: '13:00',
+				input16: '13:45',
+				input17: '13:50',
+				input18: '14:35',
+				input19: '14:40',
+				input20: '15:25',
+				input21: '15:35',
+				input22: '16:20',
+				input23: '16:25',
+				input24: '17:10',
+				input25: '17:15',
+				input26: '18:00',
 
-					// ... (other initial values)
-			  }
+				// ... (other initial values)
+			}
 	})
 
 	useEffect(() => {
@@ -140,11 +142,11 @@ function Friday({ disableAudioDays, setDisableAudioDays }) {
 						value={selectedAudio}
 					>
 						<option value=''>Выберите аудио</option>
+			
 						<option value={muz1}>Аудио 1</option>
 						<option value={muz2}>Аудио 2</option>
 						<option value={muz3}>Аудио 3</option>
 						<option value={muz4}>Аудио 4</option>
-						<option value={muz14}>Аудио 14</option>
 						<option value={muz5}>Аудио 5</option>
 						<option value={muz6}>Аудио 6</option>
 						<option value={muz7}>Балет</option>
@@ -154,7 +156,10 @@ function Friday({ disableAudioDays, setDisableAudioDays }) {
 						<option value={muz11}>Карамелька</option>
 						<option value={muz12}>Тоолордун мекени</option>
 						<option value={muz13}>Кыргызстан</option>
-						<option value={muz15}>Учать в школе</option>
+						<option value={muz14}>Аудио 14</option>
+						<option value={muz15}>Учат в школе</option>
+						<option value={muz16}>Аудио 16</option>
+						<option value={muz17}>Аудио 17</option>
 					</select>
 					<div className='ParentValue'>
 						<div className='defaultValue'>

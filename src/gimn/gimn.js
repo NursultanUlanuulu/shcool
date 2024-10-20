@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import muz4 from '../music/гимн-кр.mp3'
+import muz4 from '../music/gimn.mp3'
 
 const Gimn = () => {
 	const [isNationalAnthemPlaying, setNationalAnthemPlaying] = useState(false)
